@@ -1,0 +1,1204 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <tab name="init" type="InitTab" active="false" scrollx="652.0913696289062" scrolly="191.16287231445307" scale="1">
+    <block xmlns="https://developers.google.com/blockly/xml" type="initSettings" id=")YT2YZ)Gmua^]IF+h-F%" x="-650" y="-170">
+      <field name="LOAD_COMP_ASSETS">FALSE</field>
+      <field name="FULLSCREEN">TRUE</field>
+      <field name="BKG_TRANSPARENCY">FALSE</field>
+      <field name="PRESERVE_DRAW_BUF">TRUE</field>
+      <field name="FADE_ANNOTATIONS">TRUE</field>
+    </block>
+  </tab>
+  <tab name="main" type="MainTab" active="true" scrollx="790.999977385464" scrolly="934.6046718260702" scale="0.7462153966366272">
+    <variables xmlns="https://developers.google.com/blockly/xml">
+      <variable id="t6m1c/}[ZRmsmY}cma1?" type="">textCont</variable>
+      <variable id="=AhL]2@zMA_2MTlwedf}" type="">saved_conf_url</variable>
+    </variables>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="v=5l/fGnRjU64NXooT}c" x="-690" y="-1250">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <block type="text" id="=O24@|Y;@Ej460{B3+~{">
+          <field name="TEXT">btn-capture</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="setScreenScale" id="uiRsc*2_I[{s(djG3lRf">
+          <value name="FACTOR">
+            <shadow type="math_number" id="uJ;`jD5L@U2%Z)9o}s6^">
+              <field name="NUM">3</field>
+            </shadow>
+          </value>
+          <next>
+            <block type="setTimeout" id=".a{EUN^PXdw]k.]Z|vS$">
+              <value name="VALUE">
+                <shadow type="math_number" id=";[sO#ZNY8EJS)6~zFneg">
+                  <field name="NUM">0.01</field>
+                </shadow>
+              </value>
+              <statement name="DO">
+                <block type="downloadFile" id="K(?^u3PA2c0SbZa$KeZG">
+                  <value name="CONTENTS">
+                    <shadow type="text">
+                      <field name="TEXT">data:,</field>
+                    </shadow>
+                    <block type="takeScreenshot" id=",|xSJdrK7iJ!|:*4^){o">
+                      <field name="TYPE">png</field>
+                    </block>
+                  </value>
+                  <value name="FILENAME">
+                    <shadow type="text" id="Xx|UnIHH20[@SeVWQduq">
+                      <field name="TEXT">screenshot.png</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="setTimeout" id="Z[u?D[8mhYDs=#hT8UNO">
+                      <value name="VALUE">
+                        <shadow type="math_number" id="_h?5rR=zH[(Ao,`#|~6c">
+                          <field name="NUM">0.02</field>
+                        </shadow>
+                      </value>
+                      <statement name="DO">
+                        <block type="setScreenScale" id="_Qz!|H_lPk*KP]?TBbZ6">
+                          <value name="FACTOR">
+                            <shadow type="math_number">
+                              <field name="NUM">1</field>
+                            </shadow>
+                            <block type="nativeScreenScale" id="(g+q(K^A^!a[V*@nZ1g="/>
+                          </value>
+                        </block>
+                      </statement>
+                    </block>
+                  </next>
+                </block>
+              </statement>
+            </block>
+          </next>
+        </block>
+      </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="1eRu^.m9$S!B}K[fdPfk" x="-690" y="-930">
+      <field name="VAR" id="t6m1c/}[ZRmsmY}cma1?">textCont</field>
+      <value name="VALUE">
+        <block type="math_number" id="o{DXw4NDZF.|3S~HppWw">
+          <field name="NUM">1</field>
+        </block>
+      </value>
+      <next>
+        <block type="eventHTMLElem" id=".dKBDDxw^Qk2vh+/mf!Z">
+          <field name="EVENT">click</field>
+          <field name="PARENT">FALSE</field>
+          <value name="ID">
+            <block type="text" id="c:BQ3IORw;E!w^%rp#E(">
+              <field name="TEXT">btn-flecha-der</field>
+            </block>
+          </value>
+          <statement name="DO">
+            <block type="controls_if" id="hsYSJA,}acSx727-/Z@m">
+              <value name="IF0">
+                <block type="logic_compare" id="*XZ$M-_hQlbIN.E8NU`_">
+                  <field name="OP">EQ</field>
+                  <value name="A">
+                    <block type="variables_get" id="Y6s+vP`21?3mxCPu81vk">
+                      <field name="VAR" id="t6m1c/}[ZRmsmY}cma1?">textCont</field>
+                    </block>
+                  </value>
+                  <value name="B">
+                    <block type="math_number" id="UL{ZW~na(r`|X2D;FgJe">
+                      <field name="NUM">1</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <statement name="DO0">
+                <block type="replaceTexture" id="`BxNw3i6-FDHcFO=#q3%">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+                  <field name="OLD_TEX_NAME">1.jpg</field>
+                  <value name="MATERIAL">
+                    <block type="materialList" id=",,8/U8PZpy}b)~sc=3sl">
+                      <field name="FIELDNAME">Material.001</field>
+                    </block>
+                  </value>
+                  <value name="NEW_TEX_URL">
+                    <shadow type="text" id="4jD4@xI680.Gd)-U!ZIP">
+                      <field name="TEXT">2.jpg</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="replaceTexture" id="mt+rIR-%Jz#CW_EPA]G[">
+                      <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+                      <field name="OLD_TEX_NAME">1_a.jpg</field>
+                      <value name="MATERIAL">
+                        <block type="materialList" id="Jv@+N{15Q5#,ZRN:3mYc">
+                          <field name="FIELDNAME">Material.001</field>
+                        </block>
+                      </value>
+                      <value name="NEW_TEX_URL">
+                        <shadow type="text" id=")4tj{24U:Af!*ko04|_|">
+                          <field name="TEXT">2_a.jpg</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="setTimeout" id="(5Pz|JX5{O(AidPU4DMr">
+                          <value name="VALUE">
+                            <shadow type="math_number" id="b=2A6AqE1H8x[kGNFBnN">
+                              <field name="NUM">0.1</field>
+                            </shadow>
+                          </value>
+                          <statement name="DO">
+                            <block type="variables_set" id="q#lbJW#!0i+C]C)O#L~G">
+                              <field name="VAR" id="t6m1c/}[ZRmsmY}cma1?">textCont</field>
+                              <value name="VALUE">
+                                <block type="math_arithmetic" id="GQ8XS}Q}D|7IawkHc`VL">
+                                  <field name="OP">ADD</field>
+                                  <value name="A">
+                                    <shadow type="math_number" id="h#HJD@$BgN(O9O/$xFZN">
+                                      <field name="NUM">2</field>
+                                    </shadow>
+                                    <block type="variables_get" id="p2lu{iH3r1MF,#vLQ^f[">
+                                      <field name="VAR" id="t6m1c/}[ZRmsmY}cma1?">textCont</field>
+                                    </block>
+                                  </value>
+                                  <value name="B">
+                                    <shadow type="math_number" id="V*(a*8LBl@dpnzxKo%cp">
+                                      <field name="NUM">1</field>
+                                    </shadow>
+                                  </value>
+                                </block>
+                              </value>
+                            </block>
+                          </statement>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </statement>
+            </block>
+          </statement>
+          <next>
+            <block type="eventHTMLElem" id="r{F=`XDE{W_K,itB*m)~">
+              <field name="EVENT">click</field>
+              <field name="PARENT">FALSE</field>
+              <value name="ID">
+                <block type="text" id="CNa:@Y1HzMo1pN(:Z2Ra">
+                  <field name="TEXT">btn-flecha-der</field>
+                </block>
+              </value>
+              <statement name="DO">
+                <block type="controls_if" id="gc`3wBI}k0`@-uK/!x|T">
+                  <value name="IF0">
+                    <block type="logic_compare" id="0xsZImKctCS/^lb?ohCg">
+                      <field name="OP">EQ</field>
+                      <value name="A">
+                        <block type="variables_get" id="}dtJR$YiAK|@iH7-w.xV">
+                          <field name="VAR" id="t6m1c/}[ZRmsmY}cma1?">textCont</field>
+                        </block>
+                      </value>
+                      <value name="B">
+                        <block type="math_number" id="PH5(3)Bh:BqM04fD8C)b">
+                          <field name="NUM">2</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <statement name="DO0">
+                    <block type="replaceTexture" id="P,m#Gdc!f*U#sss[ezz3">
+                      <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+                      <field name="OLD_TEX_NAME">1.jpg</field>
+                      <value name="MATERIAL">
+                        <block type="materialList" id="B3#?_y-a*k?-JQ]AOdVI">
+                          <field name="FIELDNAME">Material.001</field>
+                        </block>
+                      </value>
+                      <value name="NEW_TEX_URL">
+                        <shadow type="text" id="f4beYnUXOezqYU%3;_Uu">
+                          <field name="TEXT">3.jpg</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="replaceTexture" id="C@g!lKr{*}[:M|^j1V;U">
+                          <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+                          <field name="OLD_TEX_NAME">1_a.jpg</field>
+                          <value name="MATERIAL">
+                            <block type="materialList" id="-b[:$wvhQkx*/m!pP5w`">
+                              <field name="FIELDNAME">Material.001</field>
+                            </block>
+                          </value>
+                          <value name="NEW_TEX_URL">
+                            <shadow type="text" id="0Yr:VZ%r*;ZZtNBI:rVx">
+                              <field name="TEXT">3_a.jpg</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="setTimeout" id="M^ou[x,4X.A5ndx~)zG;">
+                              <value name="VALUE">
+                                <shadow type="math_number" id="[MFRJcAGSJCR^suu|8i^">
+                                  <field name="NUM">0.1</field>
+                                </shadow>
+                              </value>
+                              <statement name="DO">
+                                <block type="variables_set" id="YvtAS3O-B#)W*I,82_4^">
+                                  <field name="VAR" id="t6m1c/}[ZRmsmY}cma1?">textCont</field>
+                                  <value name="VALUE">
+                                    <block type="math_arithmetic" id="RE^Ya#th,50ghXjlsNE0">
+                                      <field name="OP">ADD</field>
+                                      <value name="A">
+                                        <shadow type="math_number">
+                                          <field name="NUM">2</field>
+                                        </shadow>
+                                        <block type="variables_get" id="F8$fFlidSK.RxqE=Tx81">
+                                          <field name="VAR" id="t6m1c/}[ZRmsmY}cma1?">textCont</field>
+                                        </block>
+                                      </value>
+                                      <value name="B">
+                                        <shadow type="math_number" id="gE~qu=vl;GgRxA09D}-E">
+                                          <field name="NUM">1</field>
+                                        </shadow>
+                                      </value>
+                                    </block>
+                                  </value>
+                                </block>
+                              </statement>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </statement>
+                </block>
+              </statement>
+              <next>
+                <block type="eventHTMLElem" id="ieK@VA@6iP5^dVtZ8:p5">
+                  <field name="EVENT">click</field>
+                  <field name="PARENT">TRUE</field>
+                  <value name="ID">
+                    <block type="text" id="d(]X|u$~cV:pT!OL(yO`">
+                      <field name="TEXT">btn-flecha-der</field>
+                    </block>
+                  </value>
+                  <statement name="DO">
+                    <block type="controls_if" id="PG=Ug4@:w8]*q;g2INOx">
+                      <value name="IF0">
+                        <block type="logic_compare" id="wGU*9Sg(qO^oXB4{c%~l">
+                          <field name="OP">EQ</field>
+                          <value name="A">
+                            <block type="variables_get" id="p{pwtZZxX_7bh}_x{cGc">
+                              <field name="VAR" id="t6m1c/}[ZRmsmY}cma1?">textCont</field>
+                            </block>
+                          </value>
+                          <value name="B">
+                            <block type="math_number" id="RrmZaZ8!iOd(`p:lB%@A">
+                              <field name="NUM">3</field>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                      <statement name="DO0">
+                        <block type="replaceTexture" id="}6@G)!W;i1*L6wTlQZ_:">
+                          <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+                          <field name="OLD_TEX_NAME">1.jpg</field>
+                          <value name="MATERIAL">
+                            <block type="materialList" id="5P5E4MSUL=%6|xse]+ul">
+                              <field name="FIELDNAME">Material.001</field>
+                            </block>
+                          </value>
+                          <value name="NEW_TEX_URL">
+                            <shadow type="text" id="tw6C*9beUhIFmm@YWB]u">
+                              <field name="TEXT">4.jpg</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="replaceTexture" id="cMfvvYu+jh6a^y(y23Hv">
+                              <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+                              <field name="OLD_TEX_NAME">1_a.jpg</field>
+                              <value name="MATERIAL">
+                                <block type="materialList" id="4*P#lE,61)l71N0|.{fE">
+                                  <field name="FIELDNAME">Material.001</field>
+                                </block>
+                              </value>
+                              <value name="NEW_TEX_URL">
+                                <shadow type="text" id="gT~nHgT9T]zz=UTU4=mx">
+                                  <field name="TEXT">4_a.jpg</field>
+                                </shadow>
+                              </value>
+                              <next>
+                                <block type="setTimeout" id="E%s4vrt~e3maPAlb$ESU">
+                                  <value name="VALUE">
+                                    <shadow type="math_number" id="Nocc,^3)Q8}3~rooN{|*">
+                                      <field name="NUM">0.02</field>
+                                    </shadow>
+                                  </value>
+                                  <statement name="DO">
+                                    <block type="variables_set" id="ZOQ1**pJWEdo99[-oYUo">
+                                      <field name="VAR" id="t6m1c/}[ZRmsmY}cma1?">textCont</field>
+                                      <value name="VALUE">
+                                        <block type="math_arithmetic" id="8z.RGzV|hMO0N:tuN.r9">
+                                          <field name="OP">ADD</field>
+                                          <value name="A">
+                                            <shadow type="math_number">
+                                              <field name="NUM">2</field>
+                                            </shadow>
+                                            <block type="variables_get" id="#KyFDx]qP`t1xi6Wli`b">
+                                              <field name="VAR" id="t6m1c/}[ZRmsmY}cma1?">textCont</field>
+                                            </block>
+                                          </value>
+                                          <value name="B">
+                                            <shadow type="math_number" id="AnmjsNO?]Y36ltAP2RdK">
+                                              <field name="NUM">1</field>
+                                            </shadow>
+                                          </value>
+                                        </block>
+                                      </value>
+                                    </block>
+                                  </statement>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </statement>
+                    </block>
+                  </statement>
+                  <next>
+                    <block type="eventHTMLElem" id=")bHZi~,.wIJ0NP~E#aQB">
+                      <field name="EVENT">click</field>
+                      <field name="PARENT">FALSE</field>
+                      <value name="ID">
+                        <block type="text" id="z6W|*+sGg7XrP3OgAd=%">
+                          <field name="TEXT">btn-flecha-der</field>
+                        </block>
+                      </value>
+                      <statement name="DO">
+                        <block type="controls_if" id="RB)w4%@C!pZAUIaZ^N2D">
+                          <value name="IF0">
+                            <block type="logic_compare" id="`(hy[0z,9#1~r^)z(wLE">
+                              <field name="OP">EQ</field>
+                              <value name="A">
+                                <block type="variables_get" id="jGN/s-],eSvalW762J.W">
+                                  <field name="VAR" id="t6m1c/}[ZRmsmY}cma1?">textCont</field>
+                                </block>
+                              </value>
+                              <value name="B">
+                                <block type="math_number" id="@RSzWO[fVciY9W*@R*{q">
+                                  <field name="NUM">4</field>
+                                </block>
+                              </value>
+                            </block>
+                          </value>
+                          <statement name="DO0">
+                            <block type="replaceTexture" id="Y}82LU$Q!vT^3-3e%k7^">
+                              <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+                              <field name="OLD_TEX_NAME">1.jpg</field>
+                              <value name="MATERIAL">
+                                <block type="materialList" id="x=bkjo[f/=^GOGZ%9Hq6">
+                                  <field name="FIELDNAME">Material.001</field>
+                                </block>
+                              </value>
+                              <value name="NEW_TEX_URL">
+                                <shadow type="text" id="5OLxO]%Buq@l,^nscw,A">
+                                  <field name="TEXT">5.jpg</field>
+                                </shadow>
+                              </value>
+                              <next>
+                                <block type="replaceTexture" id="MJsR4U=uy3%g$(2]ztx/">
+                                  <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+                                  <field name="OLD_TEX_NAME">1_a.jpg</field>
+                                  <value name="MATERIAL">
+                                    <block type="materialList" id="MU4cn:T!A7(zAFLAIZtE">
+                                      <field name="FIELDNAME">Material.001</field>
+                                    </block>
+                                  </value>
+                                  <value name="NEW_TEX_URL">
+                                    <shadow type="text" id="}(6XOu/3S,t[c%vrR]5%">
+                                      <field name="TEXT">5_a.jpg</field>
+                                    </shadow>
+                                  </value>
+                                  <next>
+                                    <block type="setTimeout" id="^umxI2=7Hf`dziNcT)RA">
+                                      <value name="VALUE">
+                                        <shadow type="math_number" id="6=AU1k0sjU:[#!;C-`dK">
+                                          <field name="NUM">0.02</field>
+                                        </shadow>
+                                      </value>
+                                      <statement name="DO">
+                                        <block type="variables_set" id="DN{c[?d99,b,1g/Ul,}g">
+                                          <field name="VAR" id="t6m1c/}[ZRmsmY}cma1?">textCont</field>
+                                          <value name="VALUE">
+                                            <block type="math_arithmetic" id="tT$f~p)tB4rS0rpqFmvS">
+                                              <field name="OP">ADD</field>
+                                              <value name="A">
+                                                <shadow type="math_number">
+                                                  <field name="NUM">2</field>
+                                                </shadow>
+                                                <block type="variables_get" id=",^p{I0D;IikPHSzmtP,)">
+                                                  <field name="VAR" id="t6m1c/}[ZRmsmY}cma1?">textCont</field>
+                                                </block>
+                                              </value>
+                                              <value name="B">
+                                                <shadow type="math_number" id="5qyQu:0BiBP0cYFYhT^m">
+                                                  <field name="NUM">1</field>
+                                                </shadow>
+                                              </value>
+                                            </block>
+                                          </value>
+                                        </block>
+                                      </statement>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </statement>
+                        </block>
+                      </statement>
+                      <next>
+                        <block type="eventHTMLElem" id="7^J5/P|Yr]6/nP!L%4e/">
+                          <field name="EVENT">click</field>
+                          <field name="PARENT">FALSE</field>
+                          <value name="ID">
+                            <block type="text" id="-Bp17x/9HV[xv6]@%Uv{">
+                              <field name="TEXT">btn-flecha-der</field>
+                            </block>
+                          </value>
+                          <statement name="DO">
+                            <block type="controls_if" id="orK`5dR~p2PQqe(4fpx)">
+                              <value name="IF0">
+                                <block type="logic_compare" id="R1h.o8|8zy%K$+Wdo|nl">
+                                  <field name="OP">EQ</field>
+                                  <value name="A">
+                                    <block type="variables_get" id="AU|27^y[O]r(NN.?+On6">
+                                      <field name="VAR" id="t6m1c/}[ZRmsmY}cma1?">textCont</field>
+                                    </block>
+                                  </value>
+                                  <value name="B">
+                                    <block type="math_number" id="g9^YaQy@D/K6f;/8(v+:">
+                                      <field name="NUM">5</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </value>
+                              <statement name="DO0">
+                                <block type="replaceTexture" id="K4y;qzl4[A8uK$UB$;Ks">
+                                  <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+                                  <field name="OLD_TEX_NAME">1.jpg</field>
+                                  <value name="MATERIAL">
+                                    <block type="materialList" id="FH*.DcG-_*DQ.p|Rt1%.">
+                                      <field name="FIELDNAME">Material.001</field>
+                                    </block>
+                                  </value>
+                                  <value name="NEW_TEX_URL">
+                                    <shadow type="text" id="KiRwr@PoZ9A2zN~W23i/">
+                                      <field name="TEXT">1.jpg</field>
+                                    </shadow>
+                                  </value>
+                                  <next>
+                                    <block type="replaceTexture" id="pp.S{NlXoHY.8)SZZ$a{">
+                                      <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+                                      <field name="OLD_TEX_NAME">1_a.jpg</field>
+                                      <value name="MATERIAL">
+                                        <block type="materialList" id="2==d_aU.0dd%x9l?6XUj">
+                                          <field name="FIELDNAME">Material.001</field>
+                                        </block>
+                                      </value>
+                                      <value name="NEW_TEX_URL">
+                                        <shadow type="text" id="`9MNOrW6B}WMH@8OY2gb">
+                                          <field name="TEXT">1_a.jpg</field>
+                                        </shadow>
+                                      </value>
+                                      <next>
+                                        <block type="setTimeout" id="bfz+jsGETQxtq0@^gDgZ">
+                                          <value name="VALUE">
+                                            <shadow type="math_number" id="[6G8Xqg=ci7~Hq^zl|C;">
+                                              <field name="NUM">0.02</field>
+                                            </shadow>
+                                          </value>
+                                          <statement name="DO">
+                                            <block type="variables_set" id="O,aeSK4VrpDg.BPxC)yp">
+                                              <field name="VAR" id="t6m1c/}[ZRmsmY}cma1?">textCont</field>
+                                              <value name="VALUE">
+                                                <block type="math_number" id="zlxD#z0M{[{A^HIypqML">
+                                                  <field name="NUM">1</field>
+                                                </block>
+                                              </value>
+                                            </block>
+                                          </statement>
+                                        </block>
+                                      </next>
+                                    </block>
+                                  </next>
+                                </block>
+                              </statement>
+                            </block>
+                          </statement>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="controls_if" id="C$m9LW-kva1]`savU1.)" x="730" y="-970">
+      <mutation else="1"/>
+      <value name="IF0">
+        <block type="dictGet" id="6Y?$le]e.q{blCOmx0b]">
+          <value name="DICT">
+            <block type="getUrlData" id="L,@g2?cCuI]|eKsug*fk">
+              <field name="KIND">PARAMS</field>
+              <field name="PARENT">FALSE</field>
+            </block>
+          </value>
+          <value name="KEY">
+            <shadow type="text" id="Cdk(o0ETW.@J*g~^9|xR">
+              <field name="TEXT">image_url</field>
+            </shadow>
+          </value>
+        </block>
+      </value>
+      <statement name="DO0">
+        <block type="loadFile" id="Z-r/@5x:d~hN6)M4oFw!">
+          <value name="URL">
+            <shadow xmlns="http://www.w3.org/1999/xhtml" type="text">
+              <field name="TEXT">./mydata.txt</field>
+            </shadow>
+            <block type="dictGet" id="]ZJMdR^U)A63v(DrVs[0">
+              <value name="DICT">
+                <block type="getUrlData" id="!d67,9^*^N5o?K+3B6Tt">
+                  <field name="KIND">PARAMS</field>
+                  <field name="PARENT">FALSE</field>
+                </block>
+              </value>
+              <value name="KEY">
+                <shadow type="text" id="ZuvMcMAX3E)v:L7;RO!Z">
+                  <field name="TEXT">image_url</field>
+                </shadow>
+              </value>
+            </block>
+          </value>
+          <statement name="DO">
+            <block type="replaceTexture" id="oCHpT(cTcWx=q;:e;sR{">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="true" flextexinput="false"></mutation>
+              <field name="OLD_TEX_NAME">logo pixcoop x1024.png</field>
+              <value name="MATERIAL">
+                <block type="materialList" id="gT/9`C$W?$+q_pX.;r~l">
+                  <field name="FIELDNAME">Material.001</field>
+                </block>
+              </value>
+              <value name="NEW_TEX_URL">
+                <shadow xmlns="http://www.w3.org/1999/xhtml" type="text">
+                  <field name="TEXT">./newTexture.png</field>
+                </shadow>
+                <block type="loadedFile" id="6:6.,rxwMbsEqA%u#}QE"/>
+              </value>
+              <statement name="DO">
+                <block type="setTimeout" id="0NVcW0tL`DubPs-sZc7T">
+                  <value name="VALUE">
+                    <shadow type="math_number" id="(swcJmfp^=sTBSVAuf~b">
+                      <field name="NUM">0.1</field>
+                    </shadow>
+                  </value>
+                  <statement name="DO">
+                    <block type="setHTMLElemStyle" id="d=vxD8qXi7e|)S^Zjebm">
+                      <field name="PROPERTY">display</field>
+                      <field name="PARENT">FALSE</field>
+                      <value name="VALUE">
+                        <block type="text" id="qb0MyJ?h*nfKj*`.9d(6">
+                          <field name="TEXT">none</field>
+                        </block>
+                      </value>
+                      <value name="ID">
+                        <block type="text" id="C1/{nNK57p0vI8e*Gb`@">
+                          <field name="TEXT">hider</field>
+                        </block>
+                      </value>
+                    </block>
+                  </statement>
+                </block>
+              </statement>
+            </block>
+          </statement>
+        </block>
+      </statement>
+      <statement name="ELSE">
+        <block type="setHTMLElemStyle" id="v(yJF|,g1O)qhL#%}UcR">
+          <field name="PROPERTY">display</field>
+          <field name="PARENT">FALSE</field>
+          <value name="VALUE">
+            <block type="text" id="fRj2/=pq}3fiVA{t3c*j">
+              <field name="TEXT">none</field>
+            </block>
+          </value>
+          <value name="ID">
+            <block type="text" id="4l|7AV]e(%WBl3{Y^J@;">
+              <field name="TEXT">hider</field>
+            </block>
+          </value>
+        </block>
+      </statement>
+      <next>
+        <block type="variables_set" id="CPgqiI11oh?cf)N6=iB9">
+          <field name="VAR" id="=AhL]2@zMA_2MTlwedf}">saved_conf_url</field>
+          <value name="VALUE">
+            <block type="getUrlData" id="NJM^gZ;hMV1oo$xe5,m4">
+              <field name="KIND">URL</field>
+              <field name="PARENT">FALSE</field>
+            </block>
+          </value>
+          <next>
+            <block type="whenClicked" id="/k|:NcR`4EM0Y7D^=kk.">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" enableifmissed="false"></mutation>
+              <value name="VALUE">
+                <block type="objectList" id="EL6?aHoOWx8D6SG#Fw/e">
+                  <field name="FIELDNAME">Plano</field>
+                </block>
+              </value>
+              <statement name="DO">
+                <block type="openFile" id="~hD4=PmuK9)X:ql!sb}u">
+                  <statement name="DO">
+                    <block type="replaceTexture" id="1M7GWd?av$};KA0ZiWh+">
+                      <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+                      <field name="OLD_TEX_NAME">logo pixcoop x1024.png</field>
+                      <value name="MATERIAL">
+                        <block type="materialList" id="LJo8E|1:lFWHV^1QQD6c">
+                          <field name="FIELDNAME">Material.001</field>
+                        </block>
+                      </value>
+                      <value name="NEW_TEX_URL">
+                        <shadow xmlns="http://www.w3.org/1999/xhtml" type="text">
+                          <field name="TEXT">./newTexture.png</field>
+                        </shadow>
+                        <block type="openedFile" id="E.d402jE!!BD~WG0R2:%"/>
+                      </value>
+                      <next>
+                        <block type="sendData" id="msN-*.Sq31#(W_Uh$jGT">
+                          <value name="DATA">
+                            <block type="openedFile" id="wD)7Qf/K[^[S@1NSC$sZ"/>
+                          </value>
+                          <value name="URL">
+                            <shadow type="text" id="G^oP}El%~z${a#C3{iMD">
+                              <field name="TEXT">https://sandbox.soft8soft.com/wp-json/verge3d/v1/upload_file/</field>
+                            </shadow>
+                          </value>
+                          <statement name="DO">
+                            <block type="variables_set" id="O#yiN+0lwLX,$X4[spSE">
+                              <field name="VAR" id="=AhL]2@zMA_2MTlwedf}">saved_conf_url</field>
+                              <value name="VALUE">
+                                <block type="setUrlParam" id="-4Fn1kz]1=sj*=C5?wS3">
+                                  <value name="URL">
+                                    <shadow xmlns="http://www.w3.org/1999/xhtml" type="text">
+                                      <field name="TEXT">https://sandbox.soft8soft.com/</field>
+                                    </shadow>
+                                    <block type="getUrlData" id="]eD?E(,J@!q1lqQ`Q#2C">
+                                      <field name="KIND">URL</field>
+                                      <field name="PARENT">FALSE</field>
+                                    </block>
+                                  </value>
+                                  <value name="NAME">
+                                    <shadow type="text" id="l2FibX:`7X^WK#Vs]u{/">
+                                      <field name="TEXT">image_url</field>
+                                    </shadow>
+                                  </value>
+                                  <value name="VALUE">
+                                    <shadow xmlns="http://www.w3.org/1999/xhtml" type="text">
+                                      <field name="TEXT"></field>
+                                    </shadow>
+                                    <block type="dictGet" id="?v@Z{cd;z?z]I#(_+7%]">
+                                      <value name="DICT">
+                                        <block type="loadedFile" id="yJbzuf~5M^yt*a!cS;/D"/>
+                                      </value>
+                                      <value name="KEY">
+                                        <shadow type="text" id="5^nY%3iWpoOXtBpSj~L4">
+                                          <field name="TEXT">link</field>
+                                        </shadow>
+                                      </value>
+                                    </block>
+                                  </value>
+                                </block>
+                              </value>
+                              <next>
+                                <block type="openWebPage" id="k2*N_3%8hFXdwcpsSFxX">
+                                  <field name="MODE">NO_RELOAD</field>
+                                  <value name="URL">
+                                    <shadow xmlns="http://www.w3.org/1999/xhtml" type="text">
+                                      <field name="TEXT">https://www.soft8soft.com/</field>
+                                    </shadow>
+                                    <block type="variables_get" id="k?^a/Q8v}^e;D%S]jV/k">
+                                      <field name="VAR" id="=AhL]2@zMA_2MTlwedf}">saved_conf_url</field>
+                                    </block>
+                                  </value>
+                                </block>
+                              </next>
+                            </block>
+                          </statement>
+                        </block>
+                      </next>
+                    </block>
+                  </statement>
+                </block>
+              </statement>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="=aW77vNw^XkfNr;g(UCq" x="10" y="-910">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <block type="text" id="+pvuuDvn[sjen1t=qz}4">
+          <field name="TEXT">btn-flecha-izq</field>
+        </block>
+      </value>
+      <statement name="DO">
+        <block type="controls_if" id="^#zhcVP~nSZp83o,=)B?">
+          <value name="IF0">
+            <block type="logic_compare" id="w..C5`;GyO6;n(}Q;Vb4">
+              <field name="OP">EQ</field>
+              <value name="A">
+                <block type="variables_get" id="3D2Dc_|S#8P)W/ZU4*6m">
+                  <field name="VAR" id="t6m1c/}[ZRmsmY}cma1?">textCont</field>
+                </block>
+              </value>
+              <value name="B">
+                <block type="math_number" id="_RxxHf[nvcEV0ei)0%n;">
+                  <field name="NUM">1</field>
+                </block>
+              </value>
+            </block>
+          </value>
+          <statement name="DO0">
+            <block type="replaceTexture" id="G,1wzo*Q-v+wk0}ZxDxR">
+              <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+              <field name="OLD_TEX_NAME">1.jpg</field>
+              <value name="MATERIAL">
+                <block type="materialList" id="N/yWKn{`/bOq[uy@ry4R">
+                  <field name="FIELDNAME">Material.001</field>
+                </block>
+              </value>
+              <value name="NEW_TEX_URL">
+                <shadow type="text" id="MVNYP,CV9vuCs*;RW--t">
+                  <field name="TEXT">5.jpg</field>
+                </shadow>
+              </value>
+              <next>
+                <block type="replaceTexture" id="m^GeFB`%@njnEzgC8()Y">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+                  <field name="OLD_TEX_NAME">1_a.jpg</field>
+                  <value name="MATERIAL">
+                    <block type="materialList" id="5fREGg;h=zCxx[$)M{MB">
+                      <field name="FIELDNAME">Material.001</field>
+                    </block>
+                  </value>
+                  <value name="NEW_TEX_URL">
+                    <shadow type="text" id="5;=n,x~cwmzJ.tlDW*%]">
+                      <field name="TEXT">5_a.jpg</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="setTimeout" id="@DUf8]jV)tk7=@Y$u4q4">
+                      <value name="VALUE">
+                        <shadow type="math_number" id="s#XL:5gX3%621TryCvGh">
+                          <field name="NUM">0.02</field>
+                        </shadow>
+                      </value>
+                      <statement name="DO">
+                        <block type="variables_set" id="[gqH}fy;etp|![Y_w3lZ">
+                          <field name="VAR" id="t6m1c/}[ZRmsmY}cma1?">textCont</field>
+                          <value name="VALUE">
+                            <block type="math_number" id="s];UV+_JhCfy)k]@Rtc;">
+                              <field name="NUM">5</field>
+                            </block>
+                          </value>
+                        </block>
+                      </statement>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </statement>
+        </block>
+      </statement>
+      <next>
+        <block type="eventHTMLElem" id="Ba[6O7^EHT56,s]$Gk3T">
+          <field name="EVENT">click</field>
+          <field name="PARENT">FALSE</field>
+          <value name="ID">
+            <block type="text" id="uBkw|2;U,y3P5N+~E5$V">
+              <field name="TEXT">btn-flecha-izq</field>
+            </block>
+          </value>
+          <statement name="DO">
+            <block type="controls_if" id="|~y5iH|Y[BX+Q.=?N:K.">
+              <value name="IF0">
+                <block type="logic_compare" id="+qAe^fD$yczt3!AcX4z1">
+                  <field name="OP">EQ</field>
+                  <value name="A">
+                    <block type="variables_get" id="tM|enUd[4Yl..k;uq*zZ">
+                      <field name="VAR" id="t6m1c/}[ZRmsmY}cma1?">textCont</field>
+                    </block>
+                  </value>
+                  <value name="B">
+                    <block type="math_number" id="{M6r;1yj!s6SiVqqI,.~">
+                      <field name="NUM">5</field>
+                    </block>
+                  </value>
+                </block>
+              </value>
+              <statement name="DO0">
+                <block type="replaceTexture" id="Aq~h~%9}$X$wdR|o8UCg">
+                  <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+                  <field name="OLD_TEX_NAME">1.jpg</field>
+                  <value name="MATERIAL">
+                    <block type="materialList" id="[hsYsJ8JKITgLTRYV$Z6">
+                      <field name="FIELDNAME">Material.001</field>
+                    </block>
+                  </value>
+                  <value name="NEW_TEX_URL">
+                    <shadow type="text" id="*Y3se2E6(xJF0zAlDdq(">
+                      <field name="TEXT">4.jpg</field>
+                    </shadow>
+                  </value>
+                  <next>
+                    <block type="replaceTexture" id="=DsZsP-KvtfL4%ji+V^f">
+                      <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+                      <field name="OLD_TEX_NAME">1_a.jpg</field>
+                      <value name="MATERIAL">
+                        <block type="materialList" id="qY,KZi6lGP(@#L[ah9Rb">
+                          <field name="FIELDNAME">Material.001</field>
+                        </block>
+                      </value>
+                      <value name="NEW_TEX_URL">
+                        <shadow type="text" id="el5wUjDb#6R46)F}ni38">
+                          <field name="TEXT">4_a.jpg</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="setTimeout" id="H8}5|Ab}^m77[A2N]5DT">
+                          <value name="VALUE">
+                            <shadow type="math_number" id="E|SVw`;xr~@~]^AdsuqJ">
+                              <field name="NUM">0.02</field>
+                            </shadow>
+                          </value>
+                          <statement name="DO">
+                            <block type="variables_set" id="hP@8Afah}i:B`Hio/M2Q">
+                              <field name="VAR" id="t6m1c/}[ZRmsmY}cma1?">textCont</field>
+                              <value name="VALUE">
+                                <block type="math_arithmetic" id="ANsWHlP1m9w#AUYi!R8A">
+                                  <field name="OP">MINUS</field>
+                                  <value name="A">
+                                    <shadow type="math_number">
+                                      <field name="NUM">2</field>
+                                    </shadow>
+                                    <block type="variables_get" id="`[!t}Dnz3?[,L%;$I!8D">
+                                      <field name="VAR" id="t6m1c/}[ZRmsmY}cma1?">textCont</field>
+                                    </block>
+                                  </value>
+                                  <value name="B">
+                                    <shadow type="math_number" id="}Q:yM.]W^un1ca/.]U36">
+                                      <field name="NUM">1</field>
+                                    </shadow>
+                                  </value>
+                                </block>
+                              </value>
+                            </block>
+                          </statement>
+                        </block>
+                      </next>
+                    </block>
+                  </next>
+                </block>
+              </statement>
+            </block>
+          </statement>
+          <next>
+            <block type="eventHTMLElem" id="N#^0YjFNe4D}f~CIfl.`">
+              <field name="EVENT">click</field>
+              <field name="PARENT">FALSE</field>
+              <value name="ID">
+                <block type="text" id="Qb]6T?lqqgJ@`-Pi,h{^">
+                  <field name="TEXT">btn-flecha-izq</field>
+                </block>
+              </value>
+              <statement name="DO">
+                <block type="controls_if" id="2)ks`bYGPkBn*5R7wB~b">
+                  <value name="IF0">
+                    <block type="logic_compare" id="cb_hNaijs~R_Oe=vEO{l">
+                      <field name="OP">EQ</field>
+                      <value name="A">
+                        <block type="variables_get" id="AD|Hg(,7|jyEe-N?^Z{t">
+                          <field name="VAR" id="t6m1c/}[ZRmsmY}cma1?">textCont</field>
+                        </block>
+                      </value>
+                      <value name="B">
+                        <block type="math_number" id="@4QE|Xv?q]dKkD%(Ndbd">
+                          <field name="NUM">4</field>
+                        </block>
+                      </value>
+                    </block>
+                  </value>
+                  <statement name="DO0">
+                    <block type="replaceTexture" id="$wP2pO_bZ%K?FdVVRir~">
+                      <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+                      <field name="OLD_TEX_NAME">1.jpg</field>
+                      <value name="MATERIAL">
+                        <block type="materialList" id="}wCpZlDMIS[?t,D5+r~O">
+                          <field name="FIELDNAME">Material.001</field>
+                        </block>
+                      </value>
+                      <value name="NEW_TEX_URL">
+                        <shadow type="text" id="/d,se!?-q8NtxZV]%H5?">
+                          <field name="TEXT">3.jpg</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="replaceTexture" id="-FJoD_-t`L09?;V`FM#I">
+                          <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+                          <field name="OLD_TEX_NAME">1_a.jpg</field>
+                          <value name="MATERIAL">
+                            <block type="materialList" id="[RFq/~Fg,GRi{=g}$xsv">
+                              <field name="FIELDNAME">Material.001</field>
+                            </block>
+                          </value>
+                          <value name="NEW_TEX_URL">
+                            <shadow type="text" id="(oQGS:z4/rOTG,pa~fkR">
+                              <field name="TEXT">3_a.jpg</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="setTimeout" id="eiw{g9#~nHb$IOjDWfGb">
+                              <value name="VALUE">
+                                <shadow type="math_number" id="fh,.2w=D:Pj}Yq@U3gr5">
+                                  <field name="NUM">0.02</field>
+                                </shadow>
+                              </value>
+                              <statement name="DO">
+                                <block type="variables_set" id="Z7EIS7[72!ADXG5qZtRN">
+                                  <field name="VAR" id="t6m1c/}[ZRmsmY}cma1?">textCont</field>
+                                  <value name="VALUE">
+                                    <block type="math_arithmetic" id="[zPU2saCC}UYRcC*3a5G">
+                                      <field name="OP">MINUS</field>
+                                      <value name="A">
+                                        <shadow type="math_number">
+                                          <field name="NUM">2</field>
+                                        </shadow>
+                                        <block type="variables_get" id="wuU]$:{]u=[.Cs)9e}Jc">
+                                          <field name="VAR" id="t6m1c/}[ZRmsmY}cma1?">textCont</field>
+                                        </block>
+                                      </value>
+                                      <value name="B">
+                                        <shadow type="math_number" id="wIY15^jCVD];WF]B}|*%">
+                                          <field name="NUM">1</field>
+                                        </shadow>
+                                      </value>
+                                    </block>
+                                  </value>
+                                </block>
+                              </statement>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </statement>
+                </block>
+              </statement>
+              <next>
+                <block type="eventHTMLElem" id=".9(ZpbRs/E0UjB9CNso}">
+                  <field name="EVENT">click</field>
+                  <field name="PARENT">FALSE</field>
+                  <value name="ID">
+                    <block type="text" id="Jcla|O5zWN4Tb7jBzlVX">
+                      <field name="TEXT">btn-flecha-izq</field>
+                    </block>
+                  </value>
+                  <statement name="DO">
+                    <block type="controls_if" id="+D_D~dF?7wx.b{_e!+Q~">
+                      <value name="IF0">
+                        <block type="logic_compare" id="%MYgR#;EWFu0DI%j?jv[">
+                          <field name="OP">EQ</field>
+                          <value name="A">
+                            <block type="variables_get" id="0#t9`q8juU:O.$sr/G/w">
+                              <field name="VAR" id="t6m1c/}[ZRmsmY}cma1?">textCont</field>
+                            </block>
+                          </value>
+                          <value name="B">
+                            <block type="math_number" id="(m1kl9BEq?$|/vhwzvp+">
+                              <field name="NUM">3</field>
+                            </block>
+                          </value>
+                        </block>
+                      </value>
+                      <statement name="DO0">
+                        <block type="replaceTexture" id=";SeYP_,Q:4E95=$mG%;#">
+                          <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+                          <field name="OLD_TEX_NAME">1.jpg</field>
+                          <value name="MATERIAL">
+                            <block type="materialList" id="Xn=sFo#C^T@0Btin$m#r">
+                              <field name="FIELDNAME">Material.001</field>
+                            </block>
+                          </value>
+                          <value name="NEW_TEX_URL">
+                            <shadow type="text" id=":p4um(EfTAA2wgK]9J:,">
+                              <field name="TEXT">2.jpg</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="replaceTexture" id="T7bu@;0JpAI#/=.-wAkB">
+                              <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+                              <field name="OLD_TEX_NAME">1_a.jpg</field>
+                              <value name="MATERIAL">
+                                <block type="materialList" id="=$k@j9Y^-ygt))72t2TR">
+                                  <field name="FIELDNAME">Material.001</field>
+                                </block>
+                              </value>
+                              <value name="NEW_TEX_URL">
+                                <shadow type="text" id="({J3MwUL~,fCG+27(VeQ">
+                                  <field name="TEXT">2_a.jpg</field>
+                                </shadow>
+                              </value>
+                              <next>
+                                <block type="setTimeout" id="p`B_zi7C},k~Or(}8qoT">
+                                  <value name="VALUE">
+                                    <shadow type="math_number" id="]a3rZC8-/uD:dfWMlS;g">
+                                      <field name="NUM">0.02</field>
+                                    </shadow>
+                                  </value>
+                                  <statement name="DO">
+                                    <block type="variables_set" id="1RYrIw%FGI(s!*u%a,MU">
+                                      <field name="VAR" id="t6m1c/}[ZRmsmY}cma1?">textCont</field>
+                                      <value name="VALUE">
+                                        <block type="math_arithmetic" id="1`ns+UD[Gb6t#:h-(+9Q">
+                                          <field name="OP">MINUS</field>
+                                          <value name="A">
+                                            <shadow type="math_number">
+                                              <field name="NUM">2</field>
+                                            </shadow>
+                                            <block type="variables_get" id="S@u0lg~;r=#GG{/*7~M1">
+                                              <field name="VAR" id="t6m1c/}[ZRmsmY}cma1?">textCont</field>
+                                            </block>
+                                          </value>
+                                          <value name="B">
+                                            <shadow type="math_number" id="1907[r(J}|pT/cI2_$/Q">
+                                              <field name="NUM">1</field>
+                                            </shadow>
+                                          </value>
+                                        </block>
+                                      </value>
+                                    </block>
+                                  </statement>
+                                </block>
+                              </next>
+                            </block>
+                          </next>
+                        </block>
+                      </statement>
+                    </block>
+                  </statement>
+                  <next>
+                    <block type="eventHTMLElem" id="?VuFG`mL)J~c)[z3|O4p">
+                      <field name="EVENT">click</field>
+                      <field name="PARENT">FALSE</field>
+                      <value name="ID">
+                        <block type="text" id="9,m+xB8e`_xN93PWd0/(">
+                          <field name="TEXT">btn-flecha-izq</field>
+                        </block>
+                      </value>
+                      <statement name="DO">
+                        <block type="controls_if" id="ni$q|dNcT-6S2NpN69$$">
+                          <value name="IF0">
+                            <block type="logic_compare" id="B4D/n/vpMPK@Maq/(h-K">
+                              <field name="OP">EQ</field>
+                              <value name="A">
+                                <block type="variables_get" id="aG[lu*u%iFUn.,pQZIEt">
+                                  <field name="VAR" id="t6m1c/}[ZRmsmY}cma1?">textCont</field>
+                                </block>
+                              </value>
+                              <value name="B">
+                                <block type="math_number" id="I{9dp$:{1Zjls%|a.X%`">
+                                  <field name="NUM">2</field>
+                                </block>
+                              </value>
+                            </block>
+                          </value>
+                          <statement name="DO0">
+                            <block type="replaceTexture" id="hZrl5jQr|=*K?v7m@S+q">
+                              <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+                              <field name="OLD_TEX_NAME">1.jpg</field>
+                              <value name="MATERIAL">
+                                <block type="materialList" id="]Paaha:H-eard)U?f$v:">
+                                  <field name="FIELDNAME">Material.001</field>
+                                </block>
+                              </value>
+                              <value name="NEW_TEX_URL">
+                                <shadow type="text" id="e=DPcKk1slBQbfpka?/=">
+                                  <field name="TEXT">1.jpg</field>
+                                </shadow>
+                              </value>
+                              <next>
+                                <block type="replaceTexture" id="hI|rMvdIITAMFhf#qLpP">
+                                  <mutation xmlns="http://www.w3.org/1999/xhtml" enabledoslot="false" flextexinput="false"></mutation>
+                                  <field name="OLD_TEX_NAME">1_a.jpg</field>
+                                  <value name="MATERIAL">
+                                    <block type="materialList" id="7-1b//#.LB]n##__5)cX">
+                                      <field name="FIELDNAME">Material.001</field>
+                                    </block>
+                                  </value>
+                                  <value name="NEW_TEX_URL">
+                                    <shadow type="text" id="_Pe0E-ChyVSV(VnhRKy^">
+                                      <field name="TEXT">1_a.jpg</field>
+                                    </shadow>
+                                  </value>
+                                  <next>
+                                    <block type="setTimeout" id="kR;;atVy?j0}C`eKDmJB">
+                                      <value name="VALUE">
+                                        <shadow type="math_number" id="1|!nC4uD3rnaW?S0blj^">
+                                          <field name="NUM">0.02</field>
+                                        </shadow>
+                                      </value>
+                                      <statement name="DO">
+                                        <block type="variables_set" id="u]2w|fSa=NW=I8|]6c39">
+                                          <field name="VAR" id="t6m1c/}[ZRmsmY}cma1?">textCont</field>
+                                          <value name="VALUE">
+                                            <block type="math_arithmetic" id="`1Uc.V}X6YQpzQD[hivo">
+                                              <field name="OP">MINUS</field>
+                                              <value name="A">
+                                                <shadow type="math_number">
+                                                  <field name="NUM">2</field>
+                                                </shadow>
+                                                <block type="variables_get" id="ROkRY=E)wDfz9U3w(C!w">
+                                                  <field name="VAR" id="t6m1c/}[ZRmsmY}cma1?">textCont</field>
+                                                </block>
+                                              </value>
+                                              <value name="B">
+                                                <shadow type="math_number" id="k7@QY/c[[IB=$3?W]=pQ">
+                                                  <field name="NUM">1</field>
+                                                </shadow>
+                                              </value>
+                                            </block>
+                                          </value>
+                                        </block>
+                                      </statement>
+                                    </block>
+                                  </next>
+                                </block>
+                              </next>
+                            </block>
+                          </statement>
+                        </block>
+                      </statement>
+                    </block>
+                  </next>
+                </block>
+              </next>
+            </block>
+          </next>
+        </block>
+      </next>
+    </block>
+  </tab>
+  <editorsettings viewport-x="750" viewport-y="28" viewport-w="512" viewport-h="302" viewport-hidden="true" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+</xml>
